@@ -18,31 +18,31 @@ Standard Wired Door Bell (was £2.50 on amazon)<br/>
 6. Install Raspberry Pi OS Lite on a SD card, insert into your Pi and turn on<br/>
 7. Setup your Pi by configuring WiFi, Hostname, Password and SSH<br/>
 8. Install updates, python, python.rpi.gpio and python.requests<br/>
-    *sudo apt update
-    sudo apt upgrade
-    sudo apt-get install python python.rpi.gpio python.requests
-    sudo reboot*<br/>
+   <code>sudo apt update<br/>
+    sudo apt upgrade<br/>
+    sudo apt-get install python python.rpi.gpio python.requests<br/>
+    sudo reboot</code><br/>
 7. Add the bell.py file to the root of your pi<br/>
 8. Open Power Automate and sign in<br/>
 9. Click Create, Automated Flow then skip<br/>
 10. Add the trigger as "When a HTTP Request is received" and set the following as the body schema<br/>
-    *{
+    <code>{
         "type": "object",
         "properties": {
             "message": {
                     "type": "string"
                 }
             }
-    }*<br/>
+    }</code><br/>
 11. Then add a new step called send me a mobile notification and set the text as the message tag from the previous step<br/>
 12. Save the flow then copy the HTTP POST URL from the first step<br/>
 <img src="images/post_notification_flow.PNG" width="300">
 14. Enter the URL in the URL variable in the bell.py file<br/>
 15. Run the bell.py, press the bell and see if you get a notification<br/>
 Ensure you have the Power Automate app installed on your phone and signed in with the same account<br/>
-    *python bell.py*<br/>
+    <code>python bell.py</code><br/>
 15. If its working, set the file to start on bootup<br/>
-    *sudo nano /etc/rc.local*<br/>
+    <code>sudo nano /etc/rc.local</code><br/>
     Add the following just before the exit 0<br/>
-    *sudo python /bell.py &*<br/>
+    <code>sudo python /bell.py &</code><br/>
 16. Reboot the pi and press the button after it boots up<br/>
