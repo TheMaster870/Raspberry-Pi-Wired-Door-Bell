@@ -10,7 +10,7 @@ Raspberry Pi OS
 Standard Wired Door Bell (was £2.50 on amazon)  
 2 wires (i used 2 out of an old ethernet cable)  
 
-1. Strip the ends of the wires so theres about 1cm of bare copper showing  
+1. Strip the ends of the wires so there's about 1cm of bare copper showing  
 2. Attach the the two cables to each of the two contacts on the bell
 <img src="images/bell_back.jpg" width="300">  
 3. Connect the other ends to the 3rd and 6th outside contacts on the Pi (you can use the same contacts no matter what Pi you're using)
