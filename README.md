@@ -34,7 +34,6 @@ Standard Wired Door Bell (was £2.50 on amazon)
     }*  
 11. Then add a new step called send me a mobile notification and set the text as the message tag from the previous step  
 12. Save the flow then copy the HTTP POST URL from the first step  
-<img src="images/post_notification_flow.PNG" width="300">
 13. Enter the URL in the URL variable in the bell.py file  
 14. Run the bell.py, press the bell and see if you get a notification  
 Ensure you have the Power Automate app installed on your phone and signed in with the same account  
