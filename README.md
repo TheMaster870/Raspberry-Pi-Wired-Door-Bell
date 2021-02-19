@@ -12,9 +12,7 @@ Standard Wired Door Bell (was £2.50 on amazon)
 
 1. Strip the ends of the wires so there's about 1cm of bare copper showing
 2. Attach the the two cables to each of the two contacts on the bell
-<img src="images/bell_back.jpg" width="300">
 4. Connect the other ends to the 3rd and 6th outside contacts on the Pi (you can use the same contacts no matter what Pi you're using)
-<img src="images/pi_gpio.jpg" width="300">
 5. Install Raspberry Pi OS Lite on a SD card, insert into your Pi and turn on
 6. Setup your Pi by configuring WiFi, Hostname, Password and SSH
 7. Install updates, python, python.rpi.gpio and python.requests
@@ -36,7 +34,6 @@ Standard Wired Door Bell (was £2.50 on amazon)
     }*
 12. Then add a new step called send me a mobile notification and set the text as the message tag from the previous step
 13. Save the flow then copy the HTTP POST URL from the first step
-<img src="images/post_notification_flow.PNG" width="300">
 14. Enter the URL in the URL variable in the bell.py file
 15. Run the bell.py, press the bell and see if you get a notification
 Ensure you have the Power Automate app installed on your phone and signed in with the same account
