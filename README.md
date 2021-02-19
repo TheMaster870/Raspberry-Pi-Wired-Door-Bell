@@ -18,7 +18,7 @@ Standard Wired Door Bell (was £2.50 on amazon)<br/>
 6. Install Raspberry Pi OS Lite on a SD card, insert into your Pi and turn on<br/>
 7. Setup your Pi by configuring WiFi, Hostname, Password and SSH<br/>
 8. Install updates, python, python.rpi.gpio and python.requests<br/>
-   <code>sudo apt update<br/>
+   <code>sudo apt update<br/><br/>
     sudo apt upgrade<br/>
     sudo apt-get install python python.rpi.gpio python.requests<br/>
     sudo reboot</code><br/>
